@@ -613,7 +613,7 @@ module.exports = {
 				}
 
 				// Call the action
-				let data = await ctx.call(req.$endpoint, params, route.callOptions);
+				let data = await ctx.call(actionName, params, route.callOptions);
 
 				// Post-process the response
 
